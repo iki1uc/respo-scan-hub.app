@@ -1,19 +1,9 @@
 import { SCAN_SYSTEM } from "./modules/scan-system.js";
 
-const Router = {
+export const Router = {
     route(target) {
-        console.log("SCAN-HUB Router:", target);
-
-        switch(target) {
-            case 'scan':
-                SCAN_SYSTEM.init();
-                break;
-
-            default:
-                console.log("Unbekanntes Ziel:", target);
+        if (target === "scan") {
+            SCAN_SYSTEM.init();
         }
     }
 };
-
-export default Router;
-
