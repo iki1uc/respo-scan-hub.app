@@ -1,9 +1,8 @@
-import { SCAN_CORE } from "./scan-core.js";
+import { SCAN_ROUTER } from "./scan-router.js";
 
 export const SCAN_SYSTEM = {
     init() {
-        console.log("SCAN SYSTEM initialisiert");
-        SCAN_CORE.start();
+        console.log("SCAN SYSTEM gestartet");
+        SCAN_ROUTER.route("dom");
     }
 };
-
