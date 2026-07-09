@@ -4,4 +4,3 @@ export const SCAN_ARG = {
         return typeof input;
     }
 };
-
