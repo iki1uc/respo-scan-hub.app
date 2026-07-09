@@ -1,1 +1,13 @@
+{
+  "module": "RESPO_SCAN_HUB",
+  "version": "1.0",
+  "router": "RESPO_CORE_ROUTER",
+  "linked": true,
+  "capabilities": [
+    "dom-scan",
+    "arg-scan",
+    "position-scan",
+    "system-scan"
+  ]
+}
 
