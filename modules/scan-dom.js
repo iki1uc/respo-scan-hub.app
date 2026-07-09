@@ -5,4 +5,3 @@ export const SCAN_DOM = {
         return elements.length;
     }
 };
-
