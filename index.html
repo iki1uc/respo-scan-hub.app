@@ -1,8 +1,27 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
 <head>
-    <title>RESPO SCAN HUB</title>
+    <meta charset="UTF-8">
+
+    <!-- Mobile / App Modus -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- PWA Manifest -->
+    <link rel="manifest" href="manifest.webmanifest">
+
+    <!-- Titel -->
+    <title>RESPO SCAN HUB</title>
+
+    <!-- Service Worker Registrierung -->
+    <script>
+        if ("serviceWorker" in navigator) {
+            navigator.serviceWorker.register("service-worker.js")
+                .then(() => console.log("Service Worker aktiv"))
+                .catch(err => console.error("SW Fehler:", err));
+        }
+    </script>
+
+    <!-- Router -->
     <script type="module" src="router.js"></script>
 </head>
 
@@ -13,4 +32,3 @@
     <button onclick="Router.route('scan')">Scan starten</button>
 </body>
 </html>
-
